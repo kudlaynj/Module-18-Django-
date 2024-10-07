@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import index
-from task3.views import task3_1, task3_2, task3_3, task3_4
+from task4.views import task3_1, task3_2, task3_3, task3_4, menu
 from django.views.generic import TemplateView
 
 urlpatterns = [
@@ -28,4 +28,5 @@ urlpatterns = [
     path('methmat/', task3_3),
     path('services/', task3_2),
     path('cart/', task3_4),
+    path('menu/', menu)
 ]
