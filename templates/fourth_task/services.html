@@ -1,0 +1,18 @@
+{% include 'menu.html' %}
+
+{% block title %}Услуги{% endblock %}
+
+{% block pagename %}{% endblock %}
+
+{% block menu %}
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for i in serv %}
+            <li>
+                <p>{{ i }} <button>Купить</button></p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
